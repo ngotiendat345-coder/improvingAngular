@@ -1,0 +1,4 @@
+<p-panel header="Random Facts" *ngIf="randomFact; else noRandom">
+  {{ randomFact.text }}
+</p-panel>
+<ng-template #noRandom> Fetching... </ng-template>

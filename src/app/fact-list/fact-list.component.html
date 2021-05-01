@@ -1,0 +1,16 @@
+<p-panel header="Facts">
+  <div>
+    <p-panel header="Date Fact">
+      <span *ngIf="dateFact; else noDate">
+        {{ dateFact.text }}
+      </span>
+      <ng-template #noDate> Date has not been picked </ng-template>
+    </p-panel>
+  </div>
+  <div>
+    <p-panel header="Year Fact">
+      <span *ngIf="yearFact; else noYear">{{ yearFact.text }}</span>
+      <ng-template #noYear> Date has not been picked </ng-template>
+    </p-panel>
+  </div>
+</p-panel>
